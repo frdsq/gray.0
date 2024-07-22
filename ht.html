@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRAY_999</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{ background-color: #000;counter-reset: rrt ;}
+            
+            b,li,label,th,td,p {color: aliceblue;}           
+            
+            .onwan{
+            color:rgb(24, 189, 240);
+            text-align:center;
+            border:5px solid rgb(0, 110, 255); 
+            border-radius: 20px;
+            padding: 0px  10px;
+            margin-bottom: 2%;
+            background-color: black;
+            box-shadow: 2px 2px 20px 8px rgb(0, 174, 255) ,inset 0px 0px 20px 5px rgb(38, 0, 255) ;
+            text-shadow: 0px 4px 9px white;
+            }
+            .count::before { counter-increment: rrt ;    content:    counter(rrt ,upper-roman) " : ";         
+            color: white;
+            background: rgb(19, 35, 126);
+            margin-right: 6px;
+            font-size: 26px;
+            padding: 5px 10px;
+            border-radius: 12px;}
+            
+            .oopt{
+            display:inline-block;
+            background: black ;
+            color: beige;
+            border: 1px solid white;
+            border-radius: 10%;
+            padding: 10px 20px ;
+            margin: 20px -65px 40px 145px;
+            box-shadow: inset 1px 1px 5px 3px rgb(63, 103, 190), 2px 2px 10px 1px white;
+            text-shadow: 3px 3px 8px rgb(57, 142, 240);
+            text-decoration: none;
+            font: italic bold 20px verdana;
+            }
+            .oopt:hover{
+            background: rgb(34, 9, 104);
+            box-shadow: inset 1px 1px 5px 3px rgb(23, 73, 179), 2px 2px 10px 1px rgb(221, 23, 228);
+            text-shadow: 3px 3px 8px rgb(57, 69, 240);padding: 14px 24px ; font: italic bold 24px verdana;
+            }
+            
+
+            .tt{color: aliceblue;
+            font:italic  16px tahoma;
+            line-height: 20px;
+            padding: 15px;
+            width: 60%;
+            padding-left: 20px;
+            list-style-position: inside;
+            list-style-type: disc;
+            }
+            .tt::marker{font-size: 18px;color: aqua;}
+
+
+            .ol{color: rgb(255, 255, 255);font: italic bold 23px verdana;margin: 0% 0% 0% 2.5%;
+            text-shadow: 3px 3px 10px rgb(0, 162, 255) , 1px 1px 30px  rgb(255, 255, 255);}
+
+            .fa-solid { font-size: 45px; color: rgb(110, 54, 241); position: fixed; top: 28px; left: 35px;
+            text-shadow: 1px 1px 15px rgb(17, 162, 230);z-index: 2;}
+            .fa-solid:hover{font-size: 55px;color: rgb(4, 226, 255);text-shadow: 2px 2px 9px rgb(98, 0, 255);}          
+
+            table,td,th{
+            border: 1px solid rgb(0, 225, 255);
+            border-collapse: collapse;
+            box-shadow: 2px 2px 8px white;
+            text-align: center;
+            }
+            th{color: rgb(53, 213, 241);text-shadow: 2px 2px 8px rgb(178, 250, 238);width: 130px;height: 55px;font:italic bold 16px tahoma; ;  }
+            th:hover{color:rgb(156, 53, 241);background-color: rgb(0, 0, 0);box-shadow: inset 2px 2px 10px 6px rgb(101, 50, 218);text-shadow: 2px 2px 6px rgb(11, 137, 255);font-size: 21px;}
+            
+            .uul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 253, 232, 0.295);
+            width: 220px;
+            position: sticky;
+            left: 1000px;
+            top: 5px;}
+
+
+            .lli {
+            display:block;  box-shadow: 1px 1px 7px 2px rgb(88, 110, 150);}
+            .lli a{ display: block;text-decoration: none;color: #0232ce;padding: 12px 12px 12px 20px;border-bottom: 1.5px solid rgb(0, 238, 255);}
+            .lli:hover {background-color: rgb(15, 218, 201);}
+            
+            
+            .wwa {
+            display: none;
+            position:absolute;left: -49%;top: 25%;
+            margin: 0;
+            padding: 0;
+            list-style: none;}
+            .lli:hover .wwa {display: block;}
+            .wwab{position:absolute;left: -40%;top: 75%;}
+
+            .wwe{display: block;}
+            .wwe a{
+            display: block;
+            background-color: rgba(3, 92, 99, 0.377);
+            padding: 10px 22px;
+            border-bottom: 2px solid rebeccapurple;
+            color: rgb(0, 35, 150);
+            text-decoration: none;
+            text-align: center;}
+            .wwe:hover {background-color: rgba(137, 43, 226, 0.39); color: #000; text-shadow: 1px 1px 8px white;}
+            
+
+
+
+            input[type=email],[type=password],[type=number]{
+                display: block;
+                border: 2px   solid rgb(11, 189, 212) ;
+                border-radius: 15px;
+                box-shadow: 0px 0px 7px 3px white;
+                width: 300px; height: 45px;
+                margin-top: 16px ; margin-left: 30px;
+                padding: 10px 20px;
+                box-sizing: border-box;}
+            .inf{margin-left: 20px;font: italic bold 16px  tahoma ;color:rgb(11, 189, 212); padding: 5px; border-bottom: 3px double rgb(185, 17, 17); }
+        </style>
+    </head>
+    <body>
+        <a href="file:///C:/Users/imadf/OneDrive/Desktop/vs.stidio/ht.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="oopt">LOGIN</a>
+        <a href="#" class="oopt">الدخول</a>
+        <a href="#" class="oopt">METHODS</a>
+        <a href="#" class="oopt">9AWAIM</a>
+        <a href="#" class="oopt">SUPPORT</a>
+
+        <a href="#" class="img"  ><img src=""></a>
+        
+        
+        
+        
+        
+        
+        
+        <ul class="uul">
+            <li class="lli  home"><a href="#" >Home</a></li>
+            <li class="lli ser"><a href="#" >servises</a>
+                <ul class="wwa">
+                    <li class="wwe"><a href="#">facebook</a></li>
+                    <li  class="wwe"><a href="#">instagram</a></li>
+                    <li class="wwe"><a href="#">linked in</a></li>
+                </ul>
+            </li>
+            <li class="lli"><a href="#" >Contact</a></li>
+            <li class="lli "><a href="#" >About</a>
+                <ul class="wwa wwab">
+                    <li class="wwe"><a href="#">liane 1</a></li>
+                    <li class="wwe"><a href="#">liane 2</a></li>
+                    <li class="wwe"><a href="#">liane 3</a></li>
+                </ul>
+            </li>      
+        </ul>
+
+
+
+
+
+
+
+
+
+
+        <fieldset>
+            <legend class="onwan" ><h2 class="count"> LOGIN PAGE : </h2></legend>
+            <form novalidate action="file:///C:/Users/imadf/OneDrive/Desktop/vs.stidio/ht2.html?" method="post" target="gray">
+            
+                <b><i class="inf">email :</i></b><br>
+                <input type="email" name="email" id="email" placeholder="email" ><br><br>
+                <b><i class="inf">password :</i></b><br>
+                <input type="password" name="password" id="password" placeholder="password" required><br><br>
+                <b><i class="inf">agge :</i></b><br>
+                <input type="number" name="agge" placeholder="your age" size="15" ><br><br>
+                <b><i class="inf">addres :</i></b><br>
+                <textarea  name="addres" cols="30" rows="3"  >  </textarea><br><br>
+                <input type="submit" value="Login">
+                <input type="reset" value="reseat"><br><br>
+            </form>
+            <br>
+            <iframe width="70%" height="150" name="gray"></iframe>.<br><br>
+        </fieldset><br><br>
+
+
+        <fieldset lang="ar" dir="rtl" >
+            <legend class="onwan"><h2 class="count">تسجيل الدخول</h2></legend><br>
+            <label for="em"><br></label>
+            <input type="email" id="em" name="email" placeholder="الجيميل" >
+            <br><br>
+            <label for="ps"><br></label>
+            <input  type="password" id="ps" placeholder="كلمة السر"><br><br>
+            <a href="#"><input  style="color: aliceblue; background-color: rgb(72, 197, 255); text-shadow: 3px 3px 7px rgb(214, 14, 114);font-size: 18px;"  type="submit" value="تسجيل الدخول"></a>
+            <a href="#" style="color: rgb(131, 0, 253); text-decoration: none; font-size: 18px; text-shadow: 2px 2px 8px white; margin-right: 20px;">نسيت كلمة السر </a><br><br>
+            <p style="font: italic bold 15px tahoma; text-shadow: 2px 2px 7px rgb(80, 220, 255);">مرحبا بك في صفحة : غراي تسرني معرفتك.</p>
+        </fieldset><br><br>
+
+
+        <form method="post">
+            <fieldset>
+                <legend class="onwan"><h2 class="count"> METHODS</h2></legend>
+                <fieldset>
+                    <legend><b><i><u>CHECBOX METHODE</u></i></b></legend>
+                    <input type="checkbox" name="languages[]" id="3" value="ARB" checked>
+                    <label for="3">   ARABIC </label><br><br> 
+                    <input type="checkbox" name="languages[]" id="1" value="ENG" >
+                    <label for="1">   ENGLEISH </label><br><br>
+                    <input type="checkbox" name="languages[]" id="2" value="ESP">
+                    <label for="2">   ESPANIOL </label><br>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend><b><i><u>RADIO METHODE</u></i></b></legend>
+                    <input type="radio" id="4" name="radio" value="ARB"  checked>
+                    <label for="4" > ARABIC </label><br><br>
+                    <input type="radio" id="5" name="radio" value="ENG" >
+                    <label for="5"> ENGLEISH  </label><br><br> 
+                    <input type="radio" id="6" name="radio" value="ESP" >
+                    <label for="6"> ESPANIOL  </label><br>  
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend><b><i><u>OPTIONS METHODE</u></i></b></legend><br>
+                    <label for="opt" ><b> CHOSE A LANGUAGE </b></label>
+                    <select id="opt" name="leng[]" class="opt">
+                        <option value="ARB" selected>ARABIC</option>
+                        <option value="ENG" >ENGLEISH</option>
+                        <option value="ESP" >ESPANIOL</option>
+                    </select><br><br>
+                </fieldset><br><br>
+            
+                <fieldset><br>
+                    <legend><b><i><u>VOLUM METHODE</u></i></b></legend><br>
+                    <label for="vol"> CHOSE VOLUM    </label>
+                    <input type="range" id="vol" name="vol = " value="5" min="0" max="21" step="3" ><br>
+                </fieldset><br>
+            </fieldset>   
+        </form><br><br>
+
+
+        <h3><i><mark> 1 : JADWAL GRAY</mark></i></h3>
+        <table >
+            <caption style="margin-top: 15px; caption-side: bottom;color: rgb(250, 246, 0);font: bold 20px thoma; text-shadow: 2px 2px 6px yellow;"> TABLE 1/1 </caption>
+            <tr>
+                <td rowspan="3" colspan="3" class="ytyt" style="width: 140px; color: rgb(255, 238, 0); font-weight: bold;">GRAY</td>
+                <th >NAME</th>
+                <th >AGGE</th>
+                <th >GENDER</th>
+            </tr>
+            <tr style="height: 40px;">
+                <td>gray</td>
+                <td>18</td>
+                <td>malle</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td>achraf</td>
+                <td>22</td>
+                <td>malle</td>
+        </table><br>
+
+
+        <fieldset>
+            <legend class="onwan " ><h2 class="count"> 9AWAIM GRAY :</h2></legend>
+            <ol type="I" class="ol">
+                <h4><li>awalan kabira</h4></a>
+                    <ul class="ul" >
+                        <li class="tt"> awalan saghira t3lam fiha css mzyan</li>
+                        <li class="tt"> tanian saghira t3lm fiha java scrip </li>
+                    </ul>
+                </li>
+                <h4><li>tanian kabira</h4></a>
+                    <ul  class="ul" >
+                        <li class="tt"> flhaking 3 5otowat : 1 ricone:information +subdomains...</li>
+                        <li class="tt"> 2exploatation : 2 istiglal tagra 3:report abount the bug</li>
+                    </ul>           
+                </li>
+            </ol><br>
+        </fieldset><br><br>
+        <p>to open gray manga klick on the pic :  <a href="https://lekmanga.net" target="manga"><img  src="./logo.png" alt="error404" width="30" height="30"></a></p>
+        <iframe width="60%" height="900" name="manga"></iframe><br><br>
+    </body>
+</html>
